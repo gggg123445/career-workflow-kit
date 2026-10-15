@@ -15,8 +15,6 @@ def build(output):
     with tempfile.TemporaryDirectory(prefix="careerflow-build-") as temp:
         root = Path(temp) / "career-workflow"
         install(root)
-        license_file = Path(__file__).resolve().parents[1] / "LICENSE"
-        (root / "LICENSE").write_bytes(license_file.read_bytes())
         with zipfile.ZipFile(destination, "x", compression=zipfile.ZIP_DEFLATED) as archive:
             for file in sorted(root.rglob("*")):
                 if file.is_file():

@@ -20,8 +20,12 @@ classifiers = [
 [project.scripts]
 careerflow = "careerflow.cli:main"
 
+[project.urls]
+Repository = "https://github.com/gggg123445/career-workflow-kit"
+Issues = "https://github.com/gggg123445/career-workflow-kit/issues"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools.package-data]
-careerflow = ["resources/*.json", "skill/SKILL.md", "skill/references/*.md", "skill/agents/*.yaml", "skill/scripts/*.py"]
+careerflow = ["resources/*.json", "skill/SKILL.md", "skill/LICENSE", "skill/references/*.md", "skill/agents/*.yaml", "skill/scripts/*.py"]
