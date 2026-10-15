@@ -1,0 +1,9 @@
+{
+  "currency": "CNY",
+  "monthly_base": "10000",
+  "guaranteed_months": "12",
+  "guaranteed_annual_allowance": "0",
+  "conditional_bonus": "10000",
+  "first_year_signing_bonus": "5000",
+  "note": "All amounts are synthetic demonstration inputs, not salary recommendations."
+}

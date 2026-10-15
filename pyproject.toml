@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "career-workflow-kit"
+version = "0.1.0"
+description = "Local-first career workflow and portable, progressively loaded agent skill"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "career-workflow-kit contributors"}]
+dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Topic :: Office/Business",
+]
+
+[project.scripts]
+careerflow = "careerflow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+careerflow = ["resources/*.json", "skill/SKILL.md", "skill/references/*.md", "skill/agents/*.yaml", "skill/scripts/*.py"]

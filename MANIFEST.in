@@ -1,0 +1,9 @@
+include LICENSE README.md CONTRIBUTING.md
+recursive-include docs *.md
+recursive-include examples *.md *.json
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include src/careerflow/resources *.json
+recursive-include src/careerflow/skill *.md *.yaml *.py
+global-exclude *.pyc
+global-exclude __pycache__

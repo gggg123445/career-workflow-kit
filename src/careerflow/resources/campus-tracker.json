@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "description": "Portable campus recruitment tracker; no remote identifiers or account data. Time columns use strictly validated text.",
+  "fields": [
+    {
+      "name": "备注",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "岗位",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "邮件总结要点",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "三面时间",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "投递状态",
+      "type": "select",
+      "multiple": false
+    },
+    {
+      "name": "投递公司",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "城市",
+      "type": "select",
+      "multiple": false
+    },
+    {
+      "name": "投递时间",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "二面时间",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "一面时间",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "网址链接",
+      "type": "text",
+      "style": {
+        "type": "url"
+      }
+    },
+    {
+      "name": "测评时间",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "薪资情况",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "AI状态判断",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "笔试时间",
+      "type": "text",
+      "style": {
+        "type": "plain"
+      }
+    },
+    {
+      "name": "父记录",
+      "type": "link"
+    }
+  ],
+  "status_options": [
+    "已投简历",
+    "简历初筛",
+    "测评未做",
+    "待笔试",
+    "测评完成",
+    "已笔试",
+    "AI面完成",
+    "等待一面",
+    "一面完成",
+    "等待二面",
+    "二面完成",
+    "等待终面",
+    "终面完成",
+    "Offer",
+    "测评挂",
+    "简历挂",
+    "笔试挂",
+    "一面被刷",
+    "二面被刷",
+    "放弃面试",
+    "还没开"
+  ],
+  "default_status": "已投简历",
+  "local_authority": "applications.json",
+  "relation_note": "父记录 is a local application ID; map to remote row references explicitly when importing."
+}
